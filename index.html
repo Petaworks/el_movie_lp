@@ -523,22 +523,56 @@
 
       /* RESPONSIVE */
       @media (max-width: 768px) {
-        .hero .container {
-          flex-direction: column;
-        }
-        .feature-grid,
-        .works-grid,
-        .flow-grid {
-          grid-template-columns: 1fr;
-        }
-        .nav-links {
-          display: none;
-        }
+        /* グリッドを1列に */
+        .hero .container { flex-direction: column; }
+        .feature-grid, .works-grid, .flow-grid { grid-template-columns: 1fr; }
+        .nav-links { display: none; }
+
+        /* セクション余白縮小 */
+        .section { padding: 50px 0; }
+
+        /* 見出し */
+        .section-title { font-size: 1.4rem; margin-bottom: 30px; }
+        h2 { font-size: 1.3rem; }
+        h3 { font-size: 1.1rem; }
+
+        /* ヒーローキャッチコピー */
+        .hero-headline { font-size: 1.7rem; }
+        .hero-content { max-width: 90%; top: 12px; left: 12px; }
+
+        /* 本文テキスト */
+        body { font-size: 0.95rem; }
+        p { font-size: 0.95rem; }
+
+        /* 価格比較表 */
         .comparison-table th,
-        .comparison-table td {
-          padding: 10px;
-          font-size: 0.9rem;
-        }
+        .comparison-table td { padding: 8px 6px; font-size: 0.78rem; }
+        .comparison-table .highlight-col strong { font-size: 1.1rem; }
+        .price-main { font-size: 1.1rem !important; }
+
+        /* 課題カード */
+        .problem-card { padding: 20px 14px; font-size: 0.9rem; }
+        .problem-conclusion { font-size: 1rem; }
+
+        /* 特徴カード */
+        .feature-card { padding: 24px 18px; }
+        .feature-card h3 { font-size: 1.05rem; }
+
+        /* フロー */
+        .flow-step { padding: 20px 16px; }
+        .step-num { font-size: 1rem; }
+        .step-title { font-size: 1rem; }
+
+        /* FAQ */
+        .faq-list summary { font-size: 0.95rem; padding: 12px 14px 12px 40px; }
+        .faq-list .faq-answer { font-size: 0.9rem; }
+
+        /* お問い合わせフォーム */
+        .form-wrapper { padding: 24px 16px; }
+        .btn { font-size: 0.95rem; padding: 13px 20px; }
+
+        /* コンテナ余白 */
+        .container { padding: 0 14px; }
       }
     </style>
   </head>
